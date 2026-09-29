@@ -112,7 +112,7 @@ require_once "includes/header.php";
 
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" id="registrationFrom">
 
         <label>Name</label>
 
@@ -135,6 +135,7 @@ require_once "includes/header.php";
         <input
             type="password"
             name="password"
+            id="password"
             required
         >
 
@@ -143,6 +144,7 @@ require_once "includes/header.php";
         <input
             type="password"
             name="confirm_password"
+             id="confirm_password"
             required
         >
 

@@ -74,13 +74,14 @@ require_once "includes/header.php";
 
     <?php endif; ?>
 
-    <form method="POST">
+    <form method="POST" id="expenseForm">
 
         <label>Expense Title</label>
 
         <input
             type="text"
             name="title"
+            id="expenseTitle"
             required
         >
 
@@ -89,6 +90,7 @@ require_once "includes/header.php";
         <input
             type="number"
             name="amount"
+            id="expenseAmount"
             step="0.01"
             min="0.01"
             required
